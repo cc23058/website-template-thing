@@ -1,24 +1,78 @@
 <!doctype html>
 <!--This is the home page for your website-->
 <html lang="en">
-    <head>
-        <title>Maunga Club</title>
-        <link rel="stylesheet" href="CSS/main.css">
-        <meta charset="UTF-18">
-    </head>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maunga Club | Our Chalets</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
     <body>
-        <header>
-            <img src="pics/Maunga_Club_white.png" alt="Maunga_Club_logo">
-            <Nav>
-                <a href="Index.html">Home</a>
-                <a href="About.html">About</a>  
-                <a href="Chalets.html">Our Chalets</a>
-                <a href="Contact.html">Contact Us</a>
-            </Nav>
-        </header>
+         <header>
+        <a class="logo" href="index.html">Maunga Club</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Chalets.html" class="current-page">Our Chalets</a>
+            <a href="Contact.html">Membership</a>
+        </nav>
+    </header>
 
-    </body>
+    <main>
+        <section class="page-heading">
+            <h1>Our Chalets</h1>
+            <p>Choose a chalet that suits your group. Only members can stay.</p>
+        </section>
 
+        <section class="content">
+            <h2>Meet the chalets</h2>
+            <div class="chalet-grid">
+                <article class="chalet-card">
+                    <img class="chalet-image" src="pics/kakapo/cabin_exterior_thumb.jpg" alt="Kākāpō, the largest chalet, with a large deck">
+                    <div class="chalet-info">
+                        <h3>1. Kākāpō</h3>
+                        <p><strong>Maximum:</strong> 10 adults and 30 children</p>
+                        <ul>
+                            <li>Largest of the chalets</li>
+                            <li>Large kitchen, dining and living area</li>
+                            <li>Great amenities</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="chalet-card">
+                    <img class="chalet-image" src="pics/pukeko/chalet_exterior_thumb.jpg" alt="Pūkeko chalet among snowy trees">
+                    <div class="chalet-info">
+                        <h3>2. Pūkeko</h3>
+                        <p><strong>Maximum:</strong> 6 adults and 15 children</p>
+                        <ul>
+                            <li>Good for large groups or families who want the chalet to themselves</li>
+                            <li>Adult and child limits help make a comfortable stay</li>
+                        </ul>
+                    </div>
+                </article>
 
+                                <article class="chalet-card">
+                    <img class="chalet-image" src="pics/kereru/cabin_exterior.jpg" alt="Kererū, a small family chalet in the snow">
+                    <div class="chalet-info">
+                        <h3>3. Kererū</h3>
+                        <p><strong>Maximum:</strong> 2 adults and 4 children</p>
+                        <ul>
+                            <li>Two bedrooms</li>
+                            <li>Separate living area</li>
+                            <li>Good for a family with 2–4 children</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    #------ 3 SLIDESHOWS "One for each chalet" ------# 
+    <footer>
+        <p><strong>Maunga Club</strong> | A mountain home for members</p>
+        <p>Email: <a href="mailto:Admin@MaungaClub.org.nz">Admin@MaungaClub.org.nz</a></p>
+        <small>© 2026 Maunga Club</small>
+    </footer>
+</body>
+</html>
