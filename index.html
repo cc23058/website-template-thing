@@ -16,45 +16,103 @@
                 <a href="Contact.html">Contact Us</a>
             </Nav>
         </header>
+       
         <main>
-            <div id="hero_image">
+            <section class = hero>
+                <div> 
+                    <h1> Make the mountains your winter home</h1>
+                    <p>Stay in a welcoming chalet, enojoy the winter sourings and spend more time exploring the mountain.</p>
+                    <a class="button" href="Chalets.html">View the chalets</a>
+                </div>
+                <img src="pics/mountain_view_1.jpg" alt="A warm chalet">            
+            </section>
+
+            <section class="facts">
+                <p><strong> 550 hectares</strong><br>of skiing and snowboarding area</p>
+                <p><strong>Three chalets</strong><br><p>on the mountain</p>
+                <p><strong>Members only</strong><br>for chalet access</p>
+            </section>
+
+            <section class="sldeshow-section">
+                <h2>See the chalets</h2>
+                <p>Choose a thumbnail or use the arrows to look through the gallery.</p>
+
+                <div class="container">
+                    <inpiut class="slide-radio" type="radio" name="photo" id="photo1" checked aria-label="Show photo 1: Maunga Club chalet">
+                    <input class="slide-radio" type="radio" name="photo" id="photo2" aria-label="Show photo 2: Kererū chalet">
+                    <input class="slide-radio" type="radio" name="photo" id="photo3" aria-label="Show photo 3: Kākāpō chalet">
+                    <input class="slide-radio" type="radio" name="photo" id="photo4" aria-label="Show photo 4: Pūkeko chalet">
+                
+                   <div class="slides">
+                    <div class="mySlides slide1">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="pics/maunga_club_cabin.jpg" alt="Maunga Club Cabin">
+                        <label class="prev" for="photo4" aria-label="Previous photo">&#10094;</label>
+                        <label class="next" for="photo2" aria-label="Next photo">&#10095;</label>
+                    </div>
+
+                    <div class="mySlides slide2">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="pics/kereru/cabin_exterior.jpg" alt="Kererū chalet">
+                        <label class="prev" for="photo1" aria-label="Previous photo">&#10094;</label>
+                        <label class="next" for="photo3" aria-label="Next photo">&#10095;</label>
+                    </div>
+
+                    <div class="mySlides slide3">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="pics/kakapo/cabin_exterior.jpg" alt="Kākāpō chalet with a large deck">
+                        <label class="prev" for="photo2" aria-label="Previous photo">&#10094;</label>
+                        <label class="next" for="photo4" aria-label="Next photo">&#10095;</label>
+                    </div>
+
+                    <div class="mySlides slide4">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="pics/pukeko/chalet_exterior.jpg" alt="Pūkeko chalet among snowy trees">
+                        <label class="prev" for="photo3" aria-label="Previous photo">&#10094;</label>
+                        <label class="next" for="photo1" aria-label="Next photo">&#10095;</label>
+                    </div>
+                </div>
+
+                <div class="caption-container">
+                    <p class="caption caption1">A warm chalet </p>
+                    <p class="caption caption2">Kererū chalet in the mountains</p>
+                    <p class="caption caption3">Kākāpō chalet with a large deck</p>
+                    <p class="caption caption4">Pūkeko chalet among trees</p>
+                </div>
+
+                <div class="thumbnail-row">
+                    <label for="photo1"><img src="pics/mountain-evening.svg" alt="" title="Maunga Club chalet"></label>
+                    <label for="photo2"><img src="pics/kereru/cabin_exterior.jpg" alt="" title="Kererū chalet"></label>
+                    <label for="photo3"><img src="pics/kakapo/cabin_exterior.jpg" alt="" title="Kākāpō chalet"></label>
+                    <label for="photo4"><img src="pics/pukeko/chalet_exterior.jpg" alt="" title="Pūkeko chalet"></label>
+                </div>
+            </section>
+
+             <section class="home-links">
+            <h2>Plan your stay</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>About the club</h3>
+                    <p>Read about the mountain and the chalet booking rules.</p>
+                    <a href="About.html">More about Maunga Club</a>
+                </article>
+                <article class="card">
+                    <h3>Choose a chalet</h3>
+                    <p>Compare the features and maximum group sizes.</p>
+                    <a href="Chalets.html">See all three chalets</a>
+                </article>
+                <article class="card">
+                    <h3>Join the club</h3>
+                    <p>Find out what information to email when applying.</p>
+                    <a href="Contact.html">Membership information</a>
+                </article>
             </div>
-           
-            <!--Text generated by ChatGPT-->
-            <p>Make the mountains your winter home!</p>
-            <!--Text generated by ChatGPT-->
-            <p>When winter arrives, Maunga Club makes it easy to settle into the mountain season. Stay in a welcoming chalet, take in the alpine surroundings and enjoy more time doing what you came for: exploring the mountains. Whether you’re here for a weekend escape or a longer winter stay, make yourself at home with Maunga Club.</p>
-            
-
-            <section class="leads">
-                <img class="icon" src="pics/Maunga_Club_white.png" alt="Maunga_Club_logo">
-                <h2 class="h2">Contact</h2>
-                <p>Get In Touch With The Team Today!</p>
-                <p><a href="Contact.html">More...</a></p>
-            </section>
-            <section class="leads">
-                <img class="icon" src="pics/maunga_club_cabin.jpg" alt="Maunga_Club_Chalet_Cover">
-                <span><h2 class="h2">Our Chalets</h2></span>
-                <p>Take a glimpse into what chalets we have and what might appeal to you!</p>
-                <p><a href="Chalets.html">More...</a></p>
-            </section>
-
-
-
-            <nav>
-               
-            <p id="link">
-                <a href="Contact.html">Get In Touch Today.</a>
-            </p>
-               
-            </nav>
-        </main>
-        <footer>
-            <section  class="rule_below">
-            <h3>Maunga Club</h3>
-            <p>Maunga Club | Ph:0230 623 1120 | Email: Admin@MaungaClub.org.nz</p>
-            </section>
-            <p><small>&copy; Hire Your Chalet Today! | Website by Channing Cyster</small></p>
-        </footer>
-    </body>
+        </section>
+    </main>
+        
+    <footer>
+        <p><strong>Maunga Club</strong></p> | A mountain for our members</p>
+        <p>Email: <a href="mailto:Admin@MaungaClub.org.nz">Admin@MaungaClub.org.nz</a></p>
+    </footer>
+</body>
 </html>

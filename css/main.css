@@ -1,137 +1,401 @@
-/*This is an external stylesheet*/body{
-    font-family:  'Arial', sans-serif;
-    background-color: #d0fad0;
+body {
     margin: 0;
-    text-align: center;
+    color: #24352b;
+    background-color: #f5f5ef;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
 }
 
-h1{
-    font-size: 60px;
+img {
+    max-width: 100%;
 }
 
-h2{
-    color:#06503d;
-    text-align:center;
-    margin-left: 0px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    color: white;
+    background-color: #173c2d;
 }
 
-footer{
-    color: #000000;
-    background-color: #d0fad0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-main{
-    margin: 0 auto;
-}
-
-#main_image{
-    width: 50%;
-}
-
-
-#link{
-    margin: 50 auto 50 auto;
-    padding: 30px 15px;
-    background-color: #06503d;
-}
-
-#link a{
-    text-decoration: none;
-    display: inline-block ;
-    width: 500px;
-    padding: 15px 0px;
-    color: #daf0f7;
+.logo {
+    color: white;
+    font-size: 24px;
     font-weight: bold;
-    height: 18px;
-    background-color: #06503d;
-    border-radius: 3px;
-}
-
-#link a:hover{
-    color: black;
-    background-color: #d0fad0;
-}
-
-nav{
-    background-color:#06503d;
-    margin-bottom: -40px;
-}
-
-#whybutton{
-    margin-bottom: 0;
-}
-
-span{
-    text-align: left;
+    text-decoration: none;
 }
 
 nav a {
-    text-decoration: none;
     display: inline-block;
-    width: 200px;
-    padding: 15px 0px;
-    color: whitesmoke;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.current-page {
+    color: #f5c68d;
+    text-decoration: underline;
+}
+
+a {
+    color: #236044;
+}
+
+a:hover {
+    color: #a94f2e;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 7%;
+}
+
+.hero h1,
+.page-heading h1 {
+    color: #173c2d;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero img {
+    width: 100%;
+    border: 6px solid white;
+    box-shadow: 8px 8px #d5d9cd;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    color: white;
+    background-color: #236044;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: white;
+    background-color: #a94f2e;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 15px 7%;
+    color: white;
+    background-color: #315b42;
+    text-align: center;
+}
+
+.facts p {
+    margin: 8px;
+}
+
+.facts strong {
+    color: #f5c68d;
+    font-size: 20px;
+}
+
+.slideshow-section,
+.content,
+.home-links {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 7%;
+}
+
+h2 {
+    color: #173c2d;
+}
+
+.container {
+    position: relative;
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+.slide-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+#photo1:checked ~ .slides .slide1,
+#photo2:checked ~ .slides .slide2,
+#photo3:checked ~ .slides .slide3,
+#photo4:checked ~ .slides .slide4 {
+    display: block;
+}
+
+.mySlides img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.numbertext {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 40%;
+    padding: 12px 16px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.caption-container {
+    padding: 8px;
+    color: white;
+    background-color: #173c2d;
+    text-align: center;
+}
+
+.caption-container p {
+    min-height: 24px;
+    margin: 0;
+}
+
+.caption {
+    display: none;
+}
+
+#photo1:checked ~ .caption-container .caption1,
+#photo2:checked ~ .caption-container .caption2,
+#photo3:checked ~ .caption-container .caption3,
+#photo4:checked ~ .caption-container .caption4 {
+    display: block;
+}
+
+.thumbnail-row {
+    display: flex;
+}
+
+.thumbnail-row label {
+    display: block;
+    width: 25%;
+    border: 2px solid #173c2d;
+    background-color: #173c2d;
+    cursor: pointer;
+}
+
+.thumbnail-row img {
+    display: block;
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.thumbnail-row label:hover img {
+    opacity: 1;
+}
+
+#photo1:checked ~ .thumbnail-row label[for="photo1"] img,
+#photo2:checked ~ .thumbnail-row label[for="photo2"] img,
+#photo3:checked ~ .thumbnail-row label[for="photo3"] img,
+#photo4:checked ~ .thumbnail-row label[for="photo4"] img {
+    opacity: 1;
+}
+
+#photo1:focus-visible ~ .thumbnail-row label[for="photo1"],
+#photo2:focus-visible ~ .thumbnail-row label[for="photo2"],
+#photo3:focus-visible ~ .thumbnail-row label[for="photo3"],
+#photo4:focus-visible ~ .thumbnail-row label[for="photo4"] {
+    outline: 3px solid #a94f2e;
+}
+
+.card-grid,
+.chalet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card,
+.chalet-card,
+.privacy-note {
+    border: 1px solid #cbd2c7;
+    background-color: white;
+}
+
+.card {
+    padding: 18px;
+}
+
+.card a {
     font-weight: bold;
 }
 
-nav a:hover{
-    color:#ddf5fc;
-    background-color: green;
+.page-heading {
+    padding: 30px 7%;
+    color: white;
+    background-color: #315b42;
+    text-align: center;
 }
 
-#hero_image{
-    background-image: url("../Images/hero_image.jpg");
-    background-size: cover;
-    background-position: bottom;
-    height: 300px;
+.page-heading h1 {
+    margin-bottom: 5px;
     color: white;
-    margin-top: 100;
 }
 
-#how_image{
-    background-image: url("trash_on_beach.jpg");
-    background-size: cover;
-    background-position: bottom;
-    height: 700px;
-    color: white;
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.two-columns img {
+    width: 100%;
+}
+
+.chalet-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.chalet-info {
+    padding: 15px;
+}
+
+.chalet-info h3 {
     margin-top: 0;
+    color: #173c2d;
 }
 
-#why_image{
-    background-image: url("net.jpg");
-    background-size: cover;
-    background-position: top;
-    height: 700px;
-    color: white;
-    margin-top: 0;
+.table-scroll {
+    overflow-x: auto;
 }
 
-.icon{
-    margin-right: 10px;
-    width: 130px;
-    float: left;
- 
-   
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
 }
 
-.leads{
-    width:100%;
-    text-align:left;
-    padding-left: 120px;
-    padding-bottom: 20px;
-    border: #167187 2px solid;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    width: 650px;
-    margin-left: 650px;
-}
-
-.h2{
+caption {
+    padding: 8px;
     text-align: left;
 }
 
-.rule_below{
-    border-bottom: #ffffff 1px solid;
+th,
+td {
+    padding: 10px;
+    border: 1px solid #9ba79b;
+    text-align: left;
+}
+
+thead {
+    color: white;
+    background-color: #315b42;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e5eddf;
+}
+
+.note,
+.privacy-note {
+    padding: 16px;
+    border-left: 4px solid #c77b4e;
+    background-color: #eceee5;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #173c2d;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #f5c68d;
+}
+
+/* Stack the columns on smaller screens. */
+@media screen and (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        padding: 7px;
+    }
+
+    .hero,
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1,
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .facts {
+        display: block;
+    }
+
+    .card-grid,
+    .chalet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mySlides img {
+        height: 280px;
+    }
+
+    .thumbnail-row img {
+        height: 70px;
+    }
 }
