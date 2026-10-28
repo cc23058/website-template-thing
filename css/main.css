@@ -138,10 +138,10 @@ h2 {
     position: relative;
 }
 
-#photo1:checked ~ .slides .slide1,
-#photo2:checked ~ .slides .slide2,
-#photo3:checked ~ .slides .slide3,
-#photo4:checked ~ .slides .slide4 {
+#photo1:checked~.slides .slide1,
+#photo2:checked~.slides .slide2,
+#photo3:checked~.slides .slide3,
+#photo4:checked~.slides .slide4 {
     display: block;
 }
 
@@ -203,10 +203,10 @@ h2 {
     display: none;
 }
 
-#photo1:checked ~ .caption-container .caption1,
-#photo2:checked ~ .caption-container .caption2,
-#photo3:checked ~ .caption-container .caption3,
-#photo4:checked ~ .caption-container .caption4 {
+#photo1:checked~.caption-container .caption1,
+#photo2:checked~.caption-container .caption2,
+#photo3:checked~.caption-container .caption3,
+#photo4:checked~.caption-container .caption4 {
     display: block;
 }
 
@@ -234,17 +234,17 @@ h2 {
     opacity: 1;
 }
 
-#photo1:checked ~ .thumbnail-row label[for="photo1"] img,
-#photo2:checked ~ .thumbnail-row label[for="photo2"] img,
-#photo3:checked ~ .thumbnail-row label[for="photo3"] img,
-#photo4:checked ~ .thumbnail-row label[for="photo4"] img {
+#photo1:checked~.thumbnail-row label[for="photo1"] img,
+#photo2:checked~.thumbnail-row label[for="photo2"] img,
+#photo3:checked~.thumbnail-row label[for="photo3"] img,
+#photo4:checked~.thumbnail-row label[for="photo4"] img {
     opacity: 1;
 }
 
-#photo1:focus-visible ~ .thumbnail-row label[for="photo1"],
-#photo2:focus-visible ~ .thumbnail-row label[for="photo2"],
-#photo3:focus-visible ~ .thumbnail-row label[for="photo3"],
-#photo4:focus-visible ~ .thumbnail-row label[for="photo4"] {
+#photo1:focus-visible~.thumbnail-row label[for="photo1"],
+#photo2:focus-visible~.thumbnail-row label[for="photo2"],
+#photo3:focus-visible~.thumbnail-row label[for="photo3"],
+#photo4:focus-visible~.thumbnail-row label[for="photo4"] {
     outline: 3px solid #a94f2e;
 }
 
@@ -299,6 +299,7 @@ h2 {
     height: 220px;
     object-fit: cover;
 }
+
 /* HWHWHWHWHWHW */
 /* Each chalet gallery uses its own radio-button group. */
 .mini-gallery {
@@ -317,11 +318,11 @@ h2 {
     position: relative;
 }
 
-.mini-radio:checked + .mini-slide {
+.mini-radio:checked+.mini-slide {
     display: block;
 }
 
-.mini-radio:focus-visible + .mini-slide {
+.mini-radio:focus-visible+.mini-slide {
     outline: 3px solid #a94f2e;
 }
 
@@ -382,18 +383,18 @@ h2 {
     opacity: 1;
 }
 
-#kakapo1:checked ~ .mini-thumbnails label[for="kakapo1"] img,
-#kakapo2:checked ~ .mini-thumbnails label[for="kakapo2"] img,
-#kakapo3:checked ~ .mini-thumbnails label[for="kakapo3"] img,
-#kakapo4:checked ~ .mini-thumbnails label[for="kakapo4"] img,
-#pukeko1:checked ~ .mini-thumbnails label[for="pukeko1"] img,
-#pukeko2:checked ~ .mini-thumbnails label[for="pukeko2"] img,
-#pukeko3:checked ~ .mini-thumbnails label[for="pukeko3"] img,
-#pukeko4:checked ~ .mini-thumbnails label[for="pukeko4"] img,
-#kereru1:checked ~ .mini-thumbnails label[for="kereru1"] img,
-#kereru2:checked ~ .mini-thumbnails label[for="kereru2"] img,
-#kereru3:checked ~ .mini-thumbnails label[for="kereru3"] img,
-#kereru4:checked ~ .mini-thumbnails label[for="kereru4"] img {
+#kakapo1:checked~.mini-thumbnails label[for="kakapo1"] img,
+#kakapo2:checked~.mini-thumbnails label[for="kakapo2"] img,
+#kakapo3:checked~.mini-thumbnails label[for="kakapo3"] img,
+#kakapo4:checked~.mini-thumbnails label[for="kakapo4"] img,
+#pukeko1:checked~.mini-thumbnails label[for="pukeko1"] img,
+#pukeko2:checked~.mini-thumbnails label[for="pukeko2"] img,
+#pukeko3:checked~.mini-thumbnails label[for="pukeko3"] img,
+#pukeko4:checked~.mini-thumbnails label[for="pukeko4"] img,
+#kereru1:checked~.mini-thumbnails label[for="kereru1"] img,
+#kereru2:checked~.mini-thumbnails label[for="kereru2"] img,
+#kereru3:checked~.mini-thumbnails label[for="kereru3"] img,
+#kereru4:checked~.mini-thumbnails label[for="kereru4"] img {
     opacity: 1;
 }
 
