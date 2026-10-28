@@ -20,10 +20,15 @@ header {
 }
 
 .logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    height: 40px;
+    object-fit: contain;
 }
 
 nav a {
@@ -294,6 +299,103 @@ h2 {
     height: 220px;
     object-fit: cover;
 }
+/* HWHWHWHWHWHW */
+/* Each chalet gallery uses its own radio-button group. */
+.mini-gallery {
+    position: relative;
+}
+
+.mini-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.mini-slide {
+    display: none;
+    position: relative;
+}
+
+.mini-radio:checked + .mini-slide {
+    display: block;
+}
+
+.mini-radio:focus-visible + .mini-slide {
+    outline: 3px solid #a94f2e;
+}
+
+.mini-slide img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mini-number {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+}
+
+.mini-prev,
+.mini-next {
+    position: absolute;
+    top: 45%;
+    padding: 8px 11px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.mini-prev {
+    left: 5px;
+}
+
+.mini-next {
+    right: 5px;
+}
+
+.mini-thumbnails {
+    display: flex;
+}
+
+.mini-thumbnails label {
+    width: 25%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.mini-thumbnails img {
+    display: block;
+    width: 100%;
+    height: 55px;
+    object-fit: cover;
+    opacity: 0.65;
+}
+
+.mini-thumbnails label:hover img {
+    opacity: 1;
+}
+
+#kakapo1:checked ~ .mini-thumbnails label[for="kakapo1"] img,
+#kakapo2:checked ~ .mini-thumbnails label[for="kakapo2"] img,
+#kakapo3:checked ~ .mini-thumbnails label[for="kakapo3"] img,
+#kakapo4:checked ~ .mini-thumbnails label[for="kakapo4"] img,
+#pukeko1:checked ~ .mini-thumbnails label[for="pukeko1"] img,
+#pukeko2:checked ~ .mini-thumbnails label[for="pukeko2"] img,
+#pukeko3:checked ~ .mini-thumbnails label[for="pukeko3"] img,
+#pukeko4:checked ~ .mini-thumbnails label[for="pukeko4"] img,
+#kereru1:checked ~ .mini-thumbnails label[for="kereru1"] img,
+#kereru2:checked ~ .mini-thumbnails label[for="kereru2"] img,
+#kereru3:checked ~ .mini-thumbnails label[for="kereru3"] img,
+#kereru4:checked ~ .mini-thumbnails label[for="kereru4"] img {
+    opacity: 1;
+}
 
 .chalet-info {
     padding: 15px;
@@ -302,37 +404,6 @@ h2 {
 .chalet-info h3 {
     margin-top: 0;
     color: #173c2d;
-}
-
-.table-scroll {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-caption {
-    padding: 8px;
-    text-align: left;
-}
-
-th,
-td {
-    padding: 10px;
-    border: 1px solid #9ba79b;
-    text-align: left;
-}
-
-thead {
-    color: white;
-    background-color: #315b42;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #e5eddf;
 }
 
 .note,
@@ -397,5 +468,13 @@ footer a {
 
     .thumbnail-row img {
         height: 70px;
+    }
+
+    .mini-slide img {
+        height: 230px;
+    }
+
+    .mini-thumbnails img {
+        height: 65px;
     }
 }
